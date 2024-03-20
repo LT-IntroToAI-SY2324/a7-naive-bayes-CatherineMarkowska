@@ -58,10 +58,10 @@ class BayesClassifier:
         # stored below is how you would load a file with filename given by `fName`
         # `text` here will be the literal text of the file (i.e. what you would see
         # if you opened the file in a text editor
-        # fName = files[0]
-        # print(fName)
-        # text = self.load_file(os.path.join(self.training_data_directory, fName))
-        # print(text)
+        fName = files[0]
+        print(fName)
+        text = self.load_file(os.path.join(self.training_data_directory, fName))
+        print(text)
 
         # *Tip:* training can take a while, to make it more transparent, we can use the
         # enumerate function, which loops over something and has an automatic counter.
@@ -230,6 +230,7 @@ class BayesClassifier:
         """
         # TODO: your work here
         pass  # remove this line once you've implemented this method
+        
 
 
 if __name__ == "__main__":
